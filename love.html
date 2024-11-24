@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shining Heart</title>
+  
+  <style>
+    /* Center the heart on the screen */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color:whitesmoke;
+    }
+
+    /* Heart shape */
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transform: rotate(45deg);
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6);
+    }
+
+    /* Left and right circles to form heart */
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: 50px;
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1) rotate(45deg);
+        box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6);
+      }
+      50% {
+        transform: scale(1.1) rotate(45deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.8);
+      }
+    }
+  </style>
+
+</head>
+<body>
+    <P><h6><b><I>maryan wankujecylaxayy </I></b></h6> 
+    </P><br>
+  <div class="heart"></div>
+  
+
+</body>
+</html>
